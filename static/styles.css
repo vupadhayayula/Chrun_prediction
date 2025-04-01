@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #3b8d99, #6b7c93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    min-width: 160px;  /* Adjust this value as needed for proper alignment */
+    font-weight: 500;
+    color: #555;
+    font-size: 16px;
+    text-align: left;
+}
+
+input, select {
+    flex-grow: 1;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background: #f1f1f1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    background: #fdfdfd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    outline: none;
+    border: 2px solid #7b3f00;
+}
+
+button {
+    background: linear-gradient(45deg, #f58f29, #d54141);
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #d54141, #f58f29);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+/* Result Box Styling */
+.result {
+    background: #e9ffe6;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.result h2 {
+    font-size: 24px;
+    color: #388e3c;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.result p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: containerFade 1.5s ease-out;
+}
+
+@keyframes containerFade {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
